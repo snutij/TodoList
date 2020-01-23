@@ -1,0 +1,7 @@
+<div class="togglebutton-wrapper" [ngClass]="(checked$ | async) ? 'togglebutton-checked' : 'togglebutton-unchecked'">
+  <label for="name">
+    <span class="togglebutton-label">{{ label }}</span>
+    <span class="tooglebutton-box"></span>
+  </label>
+  <input (click)="sortList()" id="name" type="checkbox" name="name">
+</div>

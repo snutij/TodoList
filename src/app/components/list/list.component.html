@@ -1,0 +1,21 @@
+<div class="list">
+  <!-- If there is at least one task -->
+  <div *ngIf="(tasks$ | async).length">
+    <ul>
+      <li *ngFor="let task of tasks$ | async" [ngClass]="task.done ? 'done' : 'undone'">
+        <span class="label">{{task.id}}&nbsp;{{task.description}}</span>
+        <div class="actions">
+          <button (click)="toggleStatusTask(task.id)" class="btn-picto" type="button">
+            <i aria-hidden="true" class="material-icons">{{task.done ? 'check_box' : 'check_box_outline_blank'}}</i>
+          </button>
+          <button (click)="deleteTask(task.id)" class="btn-picto" type="button" aria-label="Delete" title="Delete">
+            <i aria-hidden="true" class="material-icons">delete</i>
+          </button>
+        </div>
+      </li>
+    </ul>
+    <app-toggle-button></app-toggle-button>
+  </div>
+  <!-- If there is no task -->
+  <p  *ngIf="!(tasks$ | async).length" class="emptylist">Your todo list is empty.</p>
+</div>

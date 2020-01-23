@@ -1,0 +1,5 @@
+<form name="addForm" [formGroup]="addForm" (ngSubmit)="addTask(newtask.value)">
+  <label for="newitem">Add to the todo list</label>
+  <input type="text" id="newitem" formControlName="task" #newtask>
+  <button>Add item</button>
+</form>

@@ -1,0 +1,36 @@
+form {
+    margin-top:1rem;
+    display:flex;
+    flex-wrap:wrap;
+}
+form label {
+    min-width:100%;
+    margin-bottom:.5rem;
+    font-size:1.3rem;
+}
+form input {
+    flex-grow:1;
+    border:1px solid #31724B;
+    background:#F7F7F8;
+    padding:0 1.5em;
+    font-size:initial;
+}
+form button {
+    padding:0 1.3rem;
+    background:#31724B;
+    color:white;
+    text-transform:uppercase;
+    font-weight:bold;
+    border:1px solid #F7F7F8;
+    margin-left:5px;
+    cursor:pointer;
+    transition:background .2s ease-out;
+}
+form button:hover {
+    background:#FF5E5E;
+}
+form input,
+form button {
+    font-family:'Quicksand', sans-serif;
+    height:3rem;
+}

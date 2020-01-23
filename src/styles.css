@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html, body {
+    background:#C8CDE5;
+    font-size:1.1rem;
+    font-family:'Quicksand', sans-serif;
+    height:100%;
+}
+@keyframes strikeitem {
+    to { width:calc(100% + 1rem); }
+}

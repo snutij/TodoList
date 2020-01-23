@@ -1,0 +1,48 @@
+.list .emptylist {
+    margin-top:2.6rem;
+    text-align:center;
+    letter-spacing:.05em;
+    font-style:italic;
+    opacity:0.8;
+}
+.list ul {
+    margin-top:2.6rem;
+    list-style:none;
+}
+.list li {
+    display:flex;
+    margin:0 -3rem 4px;
+    padding:1.1rem 3rem;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.1);
+}
+.list .actions {
+    flex-shrink:0;
+    padding-left:0.7em;
+}
+.list .label {
+    position:relative;
+    transition:opacity .2s linear;
+}
+.list .btn-picto {
+    border:none;
+    background:none;
+    -webkit-appearance:none;
+    cursor:pointer;
+    color:#31724B;
+}
+.list .done .label {
+    opacity:.6;
+}
+.list .done .label:before {
+    content:'';
+    position:absolute;
+    top:50%;
+    left:-.5rem;
+    display:block;
+    width:0%;
+    height:1px;
+    background:#31724B;
+    animation:strikeitem .3s ease-out 0s forwards;
+}
